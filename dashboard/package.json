@@ -1,0 +1,26 @@
+{
+  "name": "k-valkyrie-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "K-Valkyrie Ring-0 Threat Detection Dashboard — Real-time eBPF/GNN security visualization",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext .js,.jsx"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "cytoscape": "^3.29.2",
+    "cytoscape-cose-bilkent": "^4.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^8.57.0",
+    "vite": "^5.4.2"
+  }
+}
