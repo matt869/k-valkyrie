@@ -1,0 +1,15 @@
+engine:
+  window_duration_seconds: 120
+  subgraph_k_hops: 3
+  anomaly_threshold: 0.65
+  auto_freeze_quarantine: true
+
+ebpf:
+  bpf_obj_path: "build/syscall_tracer.bpf.o"
+  ringbuf_poll_timeout_ms: 100
+  pin_maps: false
+
+llm_orchestrator:
+  endpoint: "http://localhost:11434/v1"
+  model: "qwen2.5-coder"
+  timeout_seconds: 15
