@@ -1,0 +1,20 @@
+# Normalize line endings: the daemon, probes, and scripts all target Linux.
+# Enforce LF in the repository so shell scripts and eBPF sources stay valid
+# regardless of the contributor's OS.
+* text=auto eol=lf
+
+# Explicitly treat these as text with LF endings.
+*.py   text eol=lf
+*.sh   text eol=lf
+*.c    text eol=lf
+*.h    text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.md   text eol=lf
+*.jsx  text eol=lf
+*.js   text eol=lf
+*.json text eol=lf
+*.html text eol=lf
+
+# Binary assets (model checkpoints) must never be line-ending converted.
+*.pt   binary

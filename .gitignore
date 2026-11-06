@@ -1,0 +1,21 @@
+# Build artifacts
+build/
+*.o
+*.skel.h
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+*.egg-info/
+dist/
+
+# Node
+node_modules/
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
